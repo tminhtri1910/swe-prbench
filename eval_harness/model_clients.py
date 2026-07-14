@@ -361,7 +361,7 @@ class ModelRouter:
                 {"role": "user", "content": user},
             ],
             token_key: max_tokens,
-            "temperature": 0,
+            # "temperature": 0,
         }
         return self._do_openai_request(url, headers, payload, endpoint.provider) or ""
 
